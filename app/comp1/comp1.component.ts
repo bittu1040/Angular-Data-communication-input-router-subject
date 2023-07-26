@@ -14,7 +14,7 @@ export class Comp1Component implements OnInit, OnChanges {
   }
 
   ngOnChanges(){
-    console.log("ngonchange", this.userDetails);
+    console.log("ngonchange", this.userDetails)
   }
 
 }
