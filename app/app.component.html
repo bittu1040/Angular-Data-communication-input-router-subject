@@ -1,11 +1,11 @@
-<div class="box">
-  <div class="box-1">
+<div class="main-box"> 
+  <div class="section-1">
     <button *ngFor="let user of users" (click)="getUserDetails(user)">
       {{ user.name }}
     </button>
   </div>
-
-  <div class="box-2">
+  <div class="section-2">
+  <div class="box-1">
     App component (same component)
     <p>directly from method</p>
     <br />
@@ -16,15 +16,17 @@
     </div>
   </div>
 
-  <div class="box-3">
+  <div class="box-2">
     Component 1: Different component
     <p>using @input</p>
     <app-comp1 [userDetails]="userDetails"></app-comp1>
   </div>
 
-  <div class="box-4">
+  <div class="box-3">
     Component 2: Different component
     <p>using router</p>
     <router-outlet></router-outlet>
   </div>
+</div>
+
 </div>

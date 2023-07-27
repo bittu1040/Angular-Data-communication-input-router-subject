@@ -1,15 +1,28 @@
-
-.box{
+.main-box{
   display: flex;
-  gap: 10px
+  flex-direction: row;
+}
+
+.section-1{
+  border: 1px solid;
+  width: 160px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 30px;
+  margin-right: 100px;
+  }
+
+
+.section-2{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
 .box-1{
-border: 1px solid;
-width: 160px; 
-display: flex; 
-flex-direction: column; 
-gap: 20px;
+  border: 1px solid;
+  width: 240px;
+  height: 200px;
 }
 
 .box-2{
@@ -19,12 +32,6 @@ gap: 20px;
 }
 
 .box-3{
-  border: 1px solid;
-  width: 240px;
-  height: 200px;
-}
-
-.box-4{
   border: 1px solid;
   width: 240px;
   height: 200px;
