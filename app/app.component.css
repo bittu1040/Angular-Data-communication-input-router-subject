@@ -24,6 +24,7 @@ button {
   gap: 10px;
   flex-direction: row;
   margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .box-1 {
@@ -52,4 +53,17 @@ button {
   width: 240px;
   height: 200px;
   padding: 15px;
+}
+
+.box-5 {
+  border: 1px solid;
+  width: 240px;
+  height: 200px;
+  padding: 15px;
+}
+
+
+.parent-child{
+  display: flex;
+    gap: 10px;
 }

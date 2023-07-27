@@ -12,6 +12,7 @@ export class AppComponent {
   userDetails: any;
   userId: any;
   userDetailbyRouter: any;
+  dataFromChild: any
   constructor(
     private data: DataService,
     private route: ActivatedRoute,
@@ -27,5 +28,9 @@ export class AppComponent {
     this.userDetails = user;
     this.router.navigate(['/user', user.id]);
     this.data.dataShare.next(user)
+  }
+
+  captureData(value: any){
+    this.dataFromChild= value;
   }
 }

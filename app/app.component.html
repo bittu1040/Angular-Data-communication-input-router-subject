@@ -39,5 +39,21 @@
         <app-comp3></app-comp3>
       </div>
     </div>
+
+    <div class="parent-child">
+      <div class="box-5">
+        App component : Parent component
+        <br />
+        <br />
+        {{ dataFromChild }}
+      </div>
+
+      <div class="box-5">
+        Component 4 : Child component
+        <br />
+        <br />
+        <app-comp4 (outputData)="captureData($event)"> </app-comp4>
+      </div>
+    </div>
   </div>
 </div>
