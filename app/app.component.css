@@ -1,15 +1,22 @@
 .main-box {
   display: flex;
   flex-direction: row;
+  margin: 40px;
 }
 
 .section-1 {
-  border: 1px solid;
-  width: 160px;
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
-  margin-right: 100px;
+  margin-right: 60px;
+  padding: 40px;
+}
+
+button {
+  width: 180px;
 }
 
 .section-2 {
@@ -23,22 +30,26 @@
   border: 1px solid;
   width: 240px;
   height: 200px;
+  padding: 15px;
 }
 
 .box-2 {
   border: 1px solid;
   width: 240px;
   height: 200px;
+  padding: 15px;
 }
 
 .box-3 {
   border: 1px solid;
   width: 240px;
   height: 200px;
+  padding: 15px;
 }
 
 .box-4 {
   border: 1px solid;
   width: 240px;
   height: 200px;
+  padding: 15px;
 }

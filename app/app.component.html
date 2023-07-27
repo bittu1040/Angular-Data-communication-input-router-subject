@@ -1,39 +1,43 @@
 <div class="main-box">
   <div class="section-1">
+    <h2>User List</h2>
     <button *ngFor="let user of users" (click)="getUserDetails(user)">
       {{ user.name }}
     </button>
   </div>
-  <div class="section-2">
-    <div class="box-1">
-      App component (same component)
-      <p>directly from method</p>
-      <br />
-      <div *ngIf="userDetails">
-        Id: {{ userDetails.id }} <br />
-
-        name: {{ userDetails.name }}
+  <div>
+    <div> <h2> Different way of data communication (Angular)</h2></div>
+    <div class="section-2">
+      <div class="box-1">
+        App component (same component)
+        <p style="color: red"> <b>directly from method</b></p>
         <br />
-        email: {{ userDetails.email }}
+        <div *ngIf="userDetails">
+          Id: {{ userDetails.id }} <br />
+
+          name: {{ userDetails.name }}
+          <br />
+          email: {{ userDetails.email }}
+        </div>
       </div>
-    </div>
 
-    <div class="box-2">
-      Component 1: Different component
-      <p>using @input</p>
-      <app-comp1 [userDetails]="userDetails"></app-comp1>
-    </div>
+      <div class="box-2">
+        Component 1: Different component
+        <p style="color: purple;"> <b>using @input </b></p>
+        <app-comp1 [userDetails]="userDetails"></app-comp1>
+      </div>
 
-    <div class="box-3">
-      Component 2: Different component
-      <p>using router</p>
-      <router-outlet></router-outlet>
-    </div>
+      <div class="box-3">
+        Component 2: Different component
+        <p style="color: blue"><b> using router </b></p>
+        <router-outlet></router-outlet>
+      </div>
 
-    <div class="box-4">
-      Component 3: Different component
-      <p>using subject and beh subject</p>
-      <app-comp3></app-comp3>
+      <div class="box-4">
+        Component 3: Different component
+        <p style="color: green"><b> using subject and beh subject </b></p>
+        <app-comp3></app-comp3>
+      </div>
     </div>
   </div>
 </div>
