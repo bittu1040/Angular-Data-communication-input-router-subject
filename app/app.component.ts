@@ -26,5 +26,6 @@ export class AppComponent {
   getUserDetails(user) {
     this.userDetails = user;
     this.router.navigate(['/user', user.id]);
+    this.data.dataShare.next(user)
   }
 }

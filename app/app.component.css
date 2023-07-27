@@ -1,37 +1,42 @@
-.main-box{
+.main-box {
   display: flex;
   flex-direction: row;
 }
 
-.section-1{
+.section-1 {
   border: 1px solid;
-  width: 160px; 
-  display: flex; 
-  flex-direction: column; 
+  width: 160px;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
   margin-right: 100px;
-  }
+}
 
-
-.section-2{
+.section-2 {
   display: flex;
   gap: 10px;
   flex-direction: column;
 }
 
-.box-1{
+.box-1 {
   border: 1px solid;
   width: 240px;
   height: 200px;
 }
 
-.box-2{
+.box-2 {
   border: 1px solid;
   width: 240px;
   height: 200px;
 }
 
-.box-3{
+.box-3 {
+  border: 1px solid;
+  width: 240px;
+  height: 200px;
+}
+
+.box-4 {
   border: 1px solid;
   width: 240px;
   height: 200px;
